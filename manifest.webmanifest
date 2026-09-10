@@ -1,0 +1,1 @@
+{"name":"Nazifa AI Assistant","short_name":"Nazifa","description":"A private AI assistant for Android","start_url":"./","display":"standalone","background_color":"#FFFFFF","theme_color":"#2783DE","orientation":"portrait-primary","icons":[{"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
