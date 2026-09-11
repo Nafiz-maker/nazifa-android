@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare custom app icon
+        run: base64 --decode app/src/main/icon.webp.b64 > app/src/main/res/drawable/nazifa_icon.webp
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
