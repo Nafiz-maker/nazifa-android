@@ -11,7 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Prepare custom app icon
-        run: base64 --decode app/src/main/icon.webp.b64 > app/src/main/res/drawable/nazifa_icon.webp
+        run: |
+          mkdir -p app/src/main/assets/icons
+          base64 --decode app/src/main/icon.webp.b64 > app/src/main/res/drawable/nazifa_icon.webp
+          cp app/src/main/res/drawable/nazifa_icon.webp app/src/main/assets/icons/nazifa-icon.webp
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
